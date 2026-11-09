@@ -1,0 +1,23 @@
+﻿Bài 3 : Sử dụng AI an toàn khi xử lý lỗi phần mềm 
+4. Yêu cầu đầu ra
+* Báo cáo phân tích (IPO): Xác định Input (Câu trả lời của AI), Process (Quy trình kiểm chứng bằng toán tử site:stackoverflow.com hoặc trang chủ phần mềm), Output (Xác nhận lệnh an toàn/không an toàn).
+
+
+* Input:
+* sudo rm -rf/System/Library/Framework/Python.framework/Version/Current  &&
+
+
+
+
+* Process
+* site:stackoverflow.com “rm -rf” “/System/Library/Framework/Python.framework” 
+
+
+
+
+* Output
+* Lệnh sudo rm -rf sẽ xóa trực tiếp file hệ thống, nguy cơ làm hỏng môi trường macOS cho nên tuyệt đối không dùng lệnh này vào Terminal. 
+
+
+* Thiết kế một câu lệnh (Prompt) "hỏi ngược lại" AI để yêu cầu nó giải thích độ an toàn của câu lệnh trước khi bạn thực thi.
+* Tôi đang gặp lỗi Path not found khi cài đặt Python bạn có gửi cho tôi câu lệnh để sửa là: sudo rm-rf/System/Library/Framework/Python.framework/Version/Current  &&. Thì trước khi tôi dùng lệnh này bạn hãy giải thích nó ra tiếng việt cho tôi. Khi dùng lệnh này nó sẽ làm những gì và nó có nguy hiểm gì tới hệ điều hành của tôi không.
